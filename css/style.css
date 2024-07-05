@@ -15,6 +15,7 @@ p{
     color: #555555;
 }
 
+
 /*home*/
 .home {
     background-image: url(../imgs/slider-02.jpg);
@@ -30,6 +31,17 @@ p{
 }
 .container{
     padding-block: 20px;
+}
+nav{
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+}
+nav .container{
+    padding-block: 15px;
 }
 nav .logo a {
     color: rgb(255, 48, 91);
@@ -144,8 +156,11 @@ nav .links{
 
 
 /*about*/
+.about{
+    margin-bottom: 80px;
+}
 .about .container{
-    width: 65%;
+    width: 70%;
 }
 .imgbox{
     border: 8px solid #555555;
@@ -295,6 +310,103 @@ nav .links{
         width: 60%;
     }
     .about .container{
-        width: 65%;
+        width: 70%;
+    }
+}
+
+/*services*/
+
+.services{
+    background-color: #f5f5f5;
+    padding:50px ;
+    padding-inline:10% ;
+}
+.services h2{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 30px;
+}
+.lines{
+    width: 170px;
+    margin: auto;
+    padding-block: 10px;
+}
+.lines .line{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #EC2403;
+}
+.lines .line::before{
+    content: "";
+    top: -7px;
+    width: 50%;
+    height: 1px;
+    background-color: #EC2403;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%)
+}
+.lines .line::after{
+    content: "";
+    top: 7px;
+    width: 50%;
+    height: 1px;
+    background-color: #EC2403;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%)
+}
+
+.services .title{
+    margin-bottom: 50px;
+}
+
+.box{
+    float: left;
+    width: 25%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 20px;
+}
+.box:hover{
+    background-color: white;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+
+}
+.box i{
+    font-size: 36px;
+    line-height: 36px;
+    color: rgb(255, 48, 91);
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.box:hover i{
+    transform: scale(1.2,1.2);
+}
+.box h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: rgb(51, 51, 51);
+}
+
+@media only screen and (max-width: 768px) {
+    .box{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .box{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .box{
+        width: 25%;
     }
 }
