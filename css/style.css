@@ -8,15 +8,25 @@ font-family: "Source Sans 3", sans-serif;
     padding: 0;
     margin: 0;
 }
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+}
+
+/*home*/
 .home {
     background-image: url(../imgs/slider-02.jpg);
     height: 100vh;
     background-position: center;
+    margin-bottom: 60px;
 }
 .layer {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
 }
 .container{
     padding-block: 20px;
@@ -34,6 +44,7 @@ nav .logo{
 }
 nav .links{
     float:right;
+    margin-right: 5%;
 
 }
 .clr{
@@ -47,11 +58,19 @@ nav .links{
 .links ul li a{
     color: white;
     text-decoration: none;
+    transition: all 0.5s;
+}
+.links ul li a:hover{
+    color: rgb(255, 48, 91);
 }
 .caption{
     color: white;
     text-align: center;
-    margin-top: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 .caption h3{
     font-family: "Source Sans 3", sans-serif;
@@ -71,49 +90,211 @@ nav .links{
     font-weight: 300;
     font-size: 26px;
     line-height: 31px;
+    
 }
 .caption h4::after{
     content: "|";
     animation-name:job;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction:normal;
 }
 @keyframes job {
     0%{content:"|"}
-    3.125%{content: "D|";}
-    6.25%{content: "De|";}
-    9.275%{content: "Des|";}
-    12.5%{content: "Desi|";}
-    15.625%{content: "Desig|";}
-    18.75%{content: "Design|";}
-    21.875%{content: "Designe|";}
+    2.5%{content: "D|";}
+    5%{content: "De|";}
+    7.5%{content: "Des|";}
+    10%{content: "Desi|";}
+    12.5%{content: "Desig|";}
+    15%{content: "Design|";}
+    17.5%{content: "Designe|";}
+    20%{content:"Designer|"}
     25%{content:"Designer|"}
-    28.125%{content: "Designe|";}
-    31.125%{content: "Design|";}
-    34.375%{content: "Desig|";}
-    37.5%{content: "Desi|";}
-    40.625%{content: "Des|";}
-    43.75%{content: "De|";}
-    46.875%{content: "D|";}
+    27.5%{content: "Designe|";}
+    30%{content: "Design|";}
+    32.5%{content: "Desig|";}
+    35%{content: "Desi|";}
+    37.5%{content: "Des|";}
+    40%{content: "De|";}
+    42.5%{content: "D|";}
+    45%{content:"|"}
     50%{content:"|"}
-    52.7777%{content:"D|"}
-    55.5555%{content:"De|"}
-    58.3331%{content:"Dev|"}
-    61.1108%{content:"Devel|"}
-    63.8885%{content:"Devel|"}
-    66.6662%{content:"Develo|"}
-    69.4439%{content:"Develop|"}
-    72.2216%{content:"Develope|"}
+    52.5%{content:"D|"}
+    55%{content:"De|"}
+    57.5%{content:"Dev|"}
+    60%{content:"Devel|"}
+    62.5%{content:"Devel|"}
+    65%{content:"Develo|"}
+    67.5%{content:"Develop|"}
+    70%{content:"Develope|"}
+    72.5%{content:"Developer|"}
     75%{content:"Developer|"}
-    77.7777%{content:"Develope|"}
-    80.5555%{content:"Develop|"}
-    83.3333%{content:"Develo|"}
-    86.1108%{content:"Devel|"}
-    88.8888%{content:"Deve|"}
-    91.6666%{content:"Dev|"}
-    94.4444%{content:"De|"}
-    97.2222%{content:"D|"}
+    77.5%{content:"Develope|"}
+    80%{content:"Develop|"}
+    82.5%{content:"Develo|"}
+    85%{content:"Devel|"}
+    87.5%{content:"Deve|"}
+    90%{content:"Dev|"}
+    92.5%{content:"De|"}
+    95%{content:"D|"}
+    97.5%{content:"|"}
     100%{content:"|"}
+}
+
+
+/*about*/
+.about .container{
+    width: 65%;
+}
+.imgbox{
+    border: 8px solid #555555;
+    border-radius: 5px;
+    float: left;
+    width: 35%;
+}
+.imgbox .frame{
+    width: 100%;
+    transform:translate(15px,15px);
+    overflow: hidden;
+    position: relative;
+}
+.imgbox .frame:hover .img-caption{
+    top: 0;
+}
+.imgbox .frame img{
+    width: 100%;
+    border-radius: 5px;
+}
+.imgbox .img-caption{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.57);
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.about .description{
+    float: right;
+    width: 60%;
+}
+.about .description hr{
+    border: none;
+    border-top: 2px dashed black;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+}
+.about .img-caption .caption-icons{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%)
+}
+.about .img-caption .caption-icons i{
+    margin-inline: 7px;
+    color: white;
+    transition: all 0.5s;
+}
+.about .img-caption .caption-icons i:hover{
+    color: rgb(255, 48, 91);
+}
+
+.description ul{
+    list-style-type: none;
+    padding: 0;
+}
+.description ul li{
+    float: left;
+    width: 50%;
+    margin-block:5px ;
+}
+.description h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 15px;
+}
+.description h3::before{
+    content: "";
+    width: 5px;
+    height: 25px;
+    background-color:rgb(255, 48, 91);
+    position: absolute;
+    top: 0;
+    left: -15px;
+
+}
+
+.description li span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+.description .buttons button{
+    background-color: #FF305B;
+    border:none;
+    padding: 10px;
+    padding-inline: 20px;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 5px;
+    margin-right:10px ;
+}
+.description .buttons button:hover{
+    background-color: #EC2403;
+}
+@media only screen and (max-width: 768px) {
+    .imgbox{
+        border: none;
+        width: 100%;
+    }
+    .imgbox .frame{
+        transform: translate(0,0);
+    }
+    .about .description{
+        width: 100%;
+    }
+    .about .container{
+        width:90%
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .imgbox{
+        border: none;
+        width: 35%;
+    }
+    .imgbox .frame{
+        transform:translate(0,0);
+    }
+    .about .description{
+        width: 60%;
+    }
+    .about .container{
+        width:85%
+    }
+}
+@media only screen and (min-width: 1200px){
+    .imgbox{
+        border: 8px solid #555555;
+        width: 35%;
+    }
+    .imgbox .frame{
+        transform:translate(15px,15px);
+    }
+    .about .description{
+        width: 60%;
+    }
+    .about .container{
+        width: 65%;
+    }
 }
