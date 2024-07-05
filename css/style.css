@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+/*  
+font-family: "Roboto", sans-serif;
+font-family: "Source Sans 3", sans-serif;
+ */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.home {
+    background-image: url(../imgs/slider-02.jpg);
+    height: 100vh;
+    background-position: center;
+}
+.layer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.container{
+    padding-block: 20px;
+}
+nav .logo a {
+    color: rgb(255, 48, 91);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+nav .logo{
+    float: left;
+}
+nav .links{
+    float:right;
+
+}
+.clr{
+    clear:both;
+}
+.links ul li{
+    float: left;
+    margin-inline:10px ;
+    list-style-type: none;
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.caption{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+.caption h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+}
+.caption h1{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 77px;
+    color: rgb(255, 48, 91);
+}
+.caption h4{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+}
+.caption h4::after{
+    content: "|";
+    animation-name:job;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+@keyframes job {
+    0%{content:"|"}
+    3.125%{content: "D|";}
+    6.25%{content: "De|";}
+    9.275%{content: "Des|";}
+    12.5%{content: "Desi|";}
+    15.625%{content: "Desig|";}
+    18.75%{content: "Design|";}
+    21.875%{content: "Designe|";}
+    25%{content:"Designer|"}
+    28.125%{content: "Designe|";}
+    31.125%{content: "Design|";}
+    34.375%{content: "Desig|";}
+    37.5%{content: "Desi|";}
+    40.625%{content: "Des|";}
+    43.75%{content: "De|";}
+    46.875%{content: "D|";}
+    50%{content:"|"}
+    52.7777%{content:"D|"}
+    55.5555%{content:"De|"}
+    58.3331%{content:"Dev|"}
+    61.1108%{content:"Devel|"}
+    63.8885%{content:"Devel|"}
+    66.6662%{content:"Develo|"}
+    69.4439%{content:"Develop|"}
+    72.2216%{content:"Develope|"}
+    75%{content:"Developer|"}
+    77.7777%{content:"Develope|"}
+    80.5555%{content:"Develop|"}
+    83.3333%{content:"Develo|"}
+    86.1108%{content:"Devel|"}
+    88.8888%{content:"Deve|"}
+    91.6666%{content:"Dev|"}
+    94.4444%{content:"De|"}
+    97.2222%{content:"D|"}
+    100%{content:"|"}
+}
