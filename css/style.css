@@ -36,12 +36,16 @@ p{
     padding-block: 20px;
 }
 nav{
-    background-color: black;
+    background-color: transparent;
     position: fixed;
     top:0;
     left: 0;
     width: 100%;
     z-index: 100000;
+    transition:all 0.2s;
+}
+.nav-bg{
+    background-color: black;
 }
 nav .container{
     padding-block: 15px;
@@ -61,6 +65,9 @@ nav .links{
     float:right;
     margin-right: 5%;
 
+}
+nav .links a.active{
+    color: #FF305B;
 }
 .clr{
     clear:both;
